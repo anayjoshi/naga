@@ -1,0 +1,12 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define SCREEN_X 80	
+#define SCREEN_Y 24
+#define NAGA_START_X  40	
+#define NAGA_START_Y  12
+#define SLEEP_WHEN_TRAVELLING_WEST 50000
+#define SLEEP_WHEN_TRAVELLING_EAST 60000
+#define NAGA_INITIAL_LENGTH 17
+
+#endif

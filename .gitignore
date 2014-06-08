@@ -1,0 +1,6 @@
+*.o
+naga
+*.swp
+core
+doc/
+*.dblite
