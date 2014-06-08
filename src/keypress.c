@@ -12,9 +12,9 @@ extern c_bool game_on;
  */
 void process_keypress(int c) 
 {
-	switch (c) 
+  switch (c) 
     {
-		case('a'): 
+    case('a'): 
             {
                 if (the_naga.prev_dir != EAST)
                 { 
@@ -22,7 +22,7 @@ void process_keypress(int c)
                 } 
                 break;
             }
-		case('d'): 
+    case('d'): 
             {
                 if (the_naga.prev_dir != WEST)
                 { 
@@ -30,7 +30,7 @@ void process_keypress(int c)
                 } 
                 break;
             }
-		case('w'): 
+    case('w'): 
             {
                 if (the_naga.prev_dir != SOUTH)
                 { 
@@ -38,7 +38,7 @@ void process_keypress(int c)
                 } 
                 break;
             }
-		case('s'): 
+    case('s'): 
             {
                 if (the_naga.prev_dir != NORTH)
                 { 
@@ -46,10 +46,10 @@ void process_keypress(int c)
                 } 
                 break;
             }
-		case('q'): 
+    case('q'): 
             {
                 game_on = False;
             }
-	}
-	the_naga.prev_dir = the_naga.current_dir;
+  }
+  the_naga.prev_dir = the_naga.current_dir;
 }

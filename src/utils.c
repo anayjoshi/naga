@@ -4,19 +4,19 @@ void itos(const unsigned int num, char* s)
 {
     int i = 0;
     int tenpower = 1;
-	if(num > 0)
+    if(num > 0)
     {
-		while(num >= tenpower) 
+        while(num >= tenpower) 
         {
             tenpower = 10*tenpower;
             i = i+1;
-	    }
+        }
         int a = 0;
         int b = 0;
         int c = 0;
         int j = 0;
         tenpower = tenpower/10;
-		while(j < i) 
+        while(j < i) 
         {
             a = (num/tenpower);
             c = (num/tenpower) - b;
@@ -24,10 +24,10 @@ void itos(const unsigned int num, char* s)
             b = a*10;
             s[j] = (char)(((int)'0')+c);
             j++;
-		}
-	}
-	else 
+        }
+    }
+    else 
     {
         s[0] = '0';
-	}
+    }
 }

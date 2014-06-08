@@ -12,8 +12,8 @@ extern uint16_t screen_height;
 
 void init_naga() 
 {
-	the_naga.current_dir = EAST;// naga is initially moving east
-	the_naga.prev_dir = EAST;
+    the_naga.current_dir = EAST;// naga is initially moving east
+    the_naga.prev_dir = EAST;
     the_naga.head = malloc(sizeof(struct naga_part));
     the_naga.head->pos.x = screen_width/2;
     the_naga.head->pos.y = screen_height/2;

@@ -22,25 +22,25 @@ void* display_thread(void*); //the thread responsible for the movement of the na
 
 int main()
 {
-	curses_init();
-	game_on = True;
+    curses_init();
+    game_on = True;
     current_score = 0;
     getmaxyx(stdscr, screen_height, screen_width);
-	init_naga();
+    init_naga();
     generate_food();
 
-	pthread_t display_thread_id;
-	pthread_create(&display_thread_id, NULL, &display_thread, NULL); 
+    pthread_t display_thread_id;
+    pthread_create(&display_thread_id, NULL, &display_thread, NULL); 
     // This sleep is needed to avoid garbage display on screen when the game starts
     usleep(10000);
 
-	while (game_on == True) 
+    while (game_on == True) 
     {
         int c = getch();
-		process_keypress(c); // the user input keys decide the updated direction of the naga
-	}
-	curses_exit();
-	return 0;
+        process_keypress(c); // the user input keys decide the updated direction of the naga
+    }
+    curses_exit();
+    return 0;
 }
 
 /**
@@ -54,7 +54,7 @@ int main()
  */
 void* display_thread(void* unused) 
 {
-	while(game_on == True) 
+  while(game_on == True) 
     {
         c_bool collided = detect_collision(the_naga);
         if(collided == True)
