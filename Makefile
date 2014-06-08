@@ -1,5 +1,5 @@
 TARGET = naga
-INSTALL_PATH = /usr/bin
+INSTALL_PATH = /usr/local/bin
 CC=gcc
 CFLAGS=-g
 LIB = -lpthread -lncurses
