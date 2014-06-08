@@ -2,24 +2,17 @@
 
 Naga is the Sanskrit word for cobra; and here is a terminal implementation of the single most important game ever created by mankind!
 
-## Installation
+## Install
 
-I have successfully tested naga only on **ubuntu** and **OS X** workstations, but it should work elsewhere as well. Note that **ncurses** and **pthread** libraries should be installed on your computer to play naga.
-
-To run **naga**,
+I have tested naga on **ubuntu** and **OS X**, but it should work elsewhere as well. Naga depends on **ncurses** and **pthread**. 
 
 ```
 $ git clone http://github.com/anayjoshi/naga
 $ cd naga
-$ make
-$ ./naga
+$ make install
 ```
 
-You can install **naga** using
-
-```
-$ sudo make install
-```
+You can alternatively use *scons* to do the same
  
 ## How to Play
 
