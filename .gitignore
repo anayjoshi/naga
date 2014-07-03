@@ -4,3 +4,4 @@ naga
 core
 doc/
 *.dblite
+.DS_Store

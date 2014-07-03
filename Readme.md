@@ -1,3 +1,5 @@
+![Logo](/docs/img/naga-logo.png?raw=true "Logo")
+
 # Naga
 
 Naga is the Sanskrit word for cobra; and here is a terminal implementation of the single most important game ever created by mankind!
