@@ -12,7 +12,14 @@ $ cd naga
 $ make install
 ```
 
-You can alternatively use *scons* to do the same
+You can alternatively use *scons* to do the same.
+
+If you are on **OS X**, you may use the [Homebrew](http://brew.sh)
+
+```
+brew tap homebrew/games
+brew install naga
+```
  
 ## How to Play
 

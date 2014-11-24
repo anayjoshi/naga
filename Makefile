@@ -21,7 +21,7 @@ clean:
 	rm -f src/*.o $(TARGET)
 
 install: $(TARGET) 
-	@mv $(TARGET) $(INSTALL_PATH)
+	@mv $(TARGET) $(INSTALL_PATH)/$(TARGET)
 
 uninstall:
 	rm -f $(INSTALL_PATH)/$(TARGET) 
