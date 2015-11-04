@@ -14,11 +14,10 @@ $ make install
 
 You can alternatively use *scons* to do the same.
 
-If you are on **OS X**, you may use the [Homebrew](http://brew.sh)
+If you are on **OS X**, you may use [Homebrew](http://brew.sh):
 
 ```
-brew tap homebrew/games
-brew install naga
+brew install homebrew/games/naga
 ```
  
 ## How to Play
